@@ -1,2 +1,2 @@
-#rails-module-register
-> Rails module for register.
+#rails-module-signup
+> Rails module for signup.
