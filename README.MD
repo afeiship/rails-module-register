@@ -22,4 +22,7 @@ rake db:migrate
 
 # controller:
 rails g controller users signup
+
+# ruby routes:
+# get 'signup' => 'users/signup', :as => 'signup'
 ```
