@@ -6,12 +6,15 @@ class UsersController < ApplicationController
   def create
     # render plain: params.inspect
     user = User.create(user_params)
-    user.save
-    redirect_to :root
+    if user.save
+      redirect_to :users
+    else
+      render :signup
+    end
   end
 
-  def show
-    
+  def index
+    @users = User.all
   end
 
   private
